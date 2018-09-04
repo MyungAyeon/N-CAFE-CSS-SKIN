@@ -1,0 +1,1055 @@
+/* css 및 폰트불러오기 [ 예시 ] */
+/* @import url('https://drive.google.com/uc?export=download&id=1loHITcOXIdqbOzMeLM176Ce4THY1RXkd'); */
+/* @import url('https://fonts.googleapis.com/css?family=Jua&subset=korean'); */
+/* font-family: 'Jua', sans-serif; */
+
+/* ################################################## */
+/* ################ 카페 와이드 설정 ################ */
+/* ################################################## */
+/* 카페 와이드 */
+#cafe-body {
+    margin-left: 0px;
+}
+
+/* ################################################## */
+/* ################ 상단 네이버 메뉴 ################ */
+/* ################################################## */
+/* 상단 네이버 메뉴 */
+#naver-gnb {
+    margin: -5px 0 -5px 573px;
+    /*display: none;*/
+}
+/* 상단 네이버 메뉴 '네이버' 위치 */
+#naver-gnb #gnb-menu .naver-h {
+    margin-left: -1620px;
+    margin-top: 6px;
+    background-image: url('https://ssl.pstatic.net/static/cafe/cafe_pc/sp/sp_icon_180817.svg');
+    background-position: -3px 0;
+    width: 60px;
+    height: 20px;
+}
+/* 상단 네이버 메뉴 '네이버' 투명도로 글 없애기 */
+#naver-gnb #gnb-menu .naver-h a {
+    color: rgba(255, 0, 0, 0);
+    font-size: 18px;
+}
+/* 상단 네이버 메뉴 '네이버' 옆 구분선 제거 */
+#naver-gnb #gnb-menu .tcol-c {
+    display: none;
+}
+/* 상단 네이버 메뉴 '네이버' 빼고 모두 제거 */
+#naver-gnb #gnb-menu .m-cafe, #naver-gnb #gnb-menu .join-cafe, #naver-gnb #gnb-menu .chatting-cafe, #naver-gnb #gnb-menu #gnb {
+    display: none;
+}
+
+/* #################################################### */
+/* ################ 카페 이미지 와이드 ################ */
+/* #################################################### */
+/* 카페 이미지 와이드 */
+#front-img {
+    width: 1600px;
+    height: 502.08px;
+    margin-left: 33px;
+}
+
+/* 카페 이미지 와이드 */
+#front-cafe a img {
+    width: 1600px;
+    height: 502.08px;
+}
+
+/* ####################################################### */
+/* ################ 카페 카테고리, 검색바 ################ */
+/* ####################################################### */
+/* 카페 이미지 아래 카테고리 박스 */
+#special-menu {
+    margin: 170px 0 -20px 33px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .7);
+}
+/* 카테고리 박스 안쪽 */
+#special-menu .special-menu {
+    padding: 10px 20px;
+}
+/* 카테고리 구분점 제거 */
+#special-menu .special-menu li:before {
+    display: none;
+}
+/* 카테고리 오늘방송내용 다시 작성 */
+#special-menu .special-menu #special-menu-77 .link_special::before{
+    content: "★ 오늘방송내용 ★";
+    visibility: visible;
+    margin-right: -86px;
+}
+/* 카테고리 오늘방송내용 기본값 숨김 */
+#special-menu .special-menu #special-menu-77 .link_special{
+    visibility: hidden;
+}
+/* 카테고리 오늘방송 하이라이트 다시 작성 */
+#special-menu .special-menu #special-menu-66 .link_special::before{
+    content: "오늘방송 하이라이트";
+    visibility: visible;
+}
+/* 카테고리 오늘방송 하이라이트 기본값 숨김 */
+#special-menu .special-menu #special-menu-66 .link_special{
+    visibility: hidden;
+}
+/* 카페 검색바 위치 */
+.cafe-search {
+    margin: -17px -553px 7px 0px;
+}
+/* 카페 검색바 입력상자 */
+.cafe-search .inp {
+    width: 450px;
+    height: 35px;
+    border-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 13px;
+}
+/* 카페 검색바 버튼 */
+.cafe-search .btn {
+    border: 1px solid #00cc27;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fff;
+    color: #000;
+    width: 50px;
+    height: 37px;
+}
+
+/* ############################################## */
+/* ################ 카페 기본 홈 ################ */
+/* ############################################## */
+/* 카페 사이드 메뉴 */
+#content-area #group-area {
+    width: 235px;
+    margin-left: 33px;
+}
+/* 카페 메인 공간 활당량 */
+#main-area #cafe_main {
+    width: 1352px;
+}
+/* 카페 메인 공간 위치 */
+#content-area #main-area {
+    width: 800px;
+    margin-bottom: -65px;
+}
+/* 카페 대문 테두리 크기 */
+#post_1.gate-list.border-sub {
+    width: 1352px !important;
+    border-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+/* 카페 대문 박스 안쪽 */
+.skin-1080 .gate-list .gate-box {
+    margin: 0 320px;
+}
+/* 카페 대문 공간 크기 [ 버그때문에 사용불가 ] */
+/*.skin-1080 .gate-list .gate-box table {
+    width: 1325px !important;
+}*/
+/* 대문 아래 팬아트 게시판 */
+.list-tit-box {
+    margin: -15px -550px -10px 0;
+}
+/* 이미지 정렬 */
+.skin-1080 .article-album .album-box {
+    width: 170%;
+    padding-left: 10px;
+}
+/* 이미지 가로 제한값 늘리기 */
+.skin-1080 .article-album .photo-box-6 li {
+    width: 155px;
+    text-align: center;
+}
+/* 이미지 크기 지정 */
+.skin-1080 .article-album .album-box .photo {
+    width: 155px;
+    height: 150px;
+    margin-bottom: -5px;
+}
+/* 이미지 늘리기 */
+.skin-1080 .article-album .album-box .photo img {
+    width: 155px;
+    height: 150px;
+}
+/* 이미지 댓글 색상 */
+.skin-1080#main-area .m-tcol-p {
+    color:#ff9000;
+}
+/* 이미지 NEW 구 아이콘 */
+.skin-1080 .article-album .album-box .tit img {
+    content: url(https://cafe.pstatic.net/cafe4/ico-new.gif);
+    width: 13px;
+    height: 13px;
+    margin: 3px 0 0 2px !important;
+}
+
+/* ###################################################### */
+/* ################ 카페 사이드 카페정보 ################ */
+/* ###################################################### */
+/* display-none 방지 */
+#cafe-info-data {
+    height: 500px;
+    display: block !important;
+}
+/* 탭 아래 구분선 색상 */
+.skin-1080 .info-action-tab {
+    border-bottom-color: #333;
+}
+/* 탭 _ 즐겨찾기 */
+.skin-1080 .info-action-tab .tit-bookmark {
+    margin-left: 90px;
+    width: 80px;
+    border: 0;
+    line-height: 26px;
+}
+/* 탭 _ 즐겨찾기 글 */
+.skin-1080 .info-action-tab .tit-bookmark ::after{
+    content: "즐겨찾기";
+    color: #333;
+}
+/* 탭 _ '카페정보' 버튼 위치 */
+.skin-1080 #cafe-info-data .info-action-tab li.tit-info-on {
+    margin-left: -290px;
+    padding-left: 45px;
+    width: 150px;
+    visibility: hidden;
+}
+/* 탭 _ '카페정보' 변경 */
+.skin-1080 #cafe-info-data .info-action-tab li.tit-info-on ::after {
+    content: "통합 정보";
+    visibility: visible;
+}
+/* 탭 _ 버그 해결용 */
+.skin-1080 #cafe-info-data .info-action-tab li.tit-action {
+    margin-left: -290px;
+    padding-left: 45px;
+    width: 150px;
+    visibility: hidden;
+}
+/* 탭 _ 버그 해결용 */
+.skin-1080 #cafe-info-data .info-action-tab li.tit-action p ::after {
+    content: "통합 정보";
+    color: rgba(0, 0, 0, 0);
+    visibility: visible;
+}
+/* 카페, 프로필 정보 _ 1 */
+.skin-1080 .ia-info-data {
+    margin-bottom: -20px;
+    padding: 10px 10px 12px 10px;
+}
+/* 카페 아이콘 위치 */
+.skin-1080 .ia-info-data li.gm-tcol-c:first-child {
+    padding-left: 20px;
+}
+/* 카페 아이콘 테두리 위치 */
+.skin-1080 .ia-info-data li.gm-tcol-c:first-child a:before {
+    left: 20px;
+}
+/* 카페 매니저 정보 위치 */
+.skin-1080 .ia-info-data li.gm-tcol-c:last-child {
+    padding-top: 70px;
+    margin-left: -85px;
+    text-align: center;
+}
+/* 카페소개 버튼 숨김  */
+.skin-1080 .ia-info-data .info-view {
+    visibility: hidden;
+}
+/* 카페 정보 _ 2 */
+.skin-1080 .ia-info-data2 {
+    margin-top: 61px;
+}
+/* 카페 등급 폰트 */
+.skin-1080 .ia-info-data2 .level-info .gm-tcol-c em {
+    font-weight: bold;
+}
+/* 카페 회원수 폰트 */
+.skin-1080 .ia-info-data2 .mem-cnt-info em {
+    font-weight: bold;
+}
+/* 카페 초대하기 폰트 */
+.skin-1080 .ia-info-data2 .mem-cnt-info .link_invite {
+    font-weight: bold;
+    color: #333;
+}
+/* 대표카페 엠블럼 위치 */
+.skin-1080 #ia-info-data-emblem {
+    padding: 12px 0 12px 24px;
+    margin: -191px 0 130px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+/* 대표카페 엠블럼 텍스트 */
+.skin-1080 #ia-info-data-emblem .txt {
+    font-weight: bold;
+    line-height: 20px;
+    margin-top: 8px;
+}
+/* 카페 글쓰기 버튼 */
+.skin-1080 .cafe-write-btn {
+    padding-top: 85px;
+    padding-right: 120px;
+}
+/* 카페 글쓰기 버튼 테두리 */
+.skin-1080 .cafe-write-btn a {
+    border-radius: 5px;
+    padding:8px 0;
+    background-color: #04a418f2;
+    font-size: 12px;
+}
+/* 카페 채팅 버튼 */
+.skin-1080 .ia-info-btn {
+    margin-top: -40px;
+    padding-left: 120px;
+}
+/* 카페 채팅 버튼 테두리 */
+.skin-1080 .ia-info-btn .link_chat {
+    border-radius: 5px;
+    border-color: #000;
+    height: 32px;
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+/* ###################################################### */
+/* ################ 카페 사이드 나의활동 ################ */
+/* ###################################################### */
+/* display-none 방지 */
+#member-action-data {
+    display: block !important;
+}
+/* 탭 제거 */
+.skin-1080 #member-action-data .info-action-tab {
+    display: none;
+}
+/* 엠블럼 제거 */
+.skin-1080 #member-action-data #ia-info-data-emblem {
+    display: none;
+}
+/* 글쓰기 버튼 제거 */
+.skin-1080 #member-action-data .cafe-write-btn {
+    display: none;
+}
+/* 채팅 버튼 제거 */
+.skin-1080 #member-action-data .ia-info-btn {
+    display: none;
+}
+/* 정보창 이동 */
+.skin-1080 #member-action-data .box-g {
+    margin-top: -395px;
+    padding-bottom: 40px;
+}
+/* 프로필 사진 위치 */
+.skin-1080 #member-action-data .prfl_thmb {
+    margin: -58px 0 0 15px;
+}
+/* 프로필 상자 위치 */
+.skin-1080 #member-action-data .ia-action-data {
+    padding-left: 130px;
+    padding-top: 0;
+}
+/* 닉네임 가운데 정렬 */
+.skin-1080 #member-action-data .ia-action-data li#editLayer.name.gm-tcol-c {
+    text-align: center;
+    width: 90px;
+}
+/* 카페 활동 등급 위치 */
+.skin-1080 #member-action-data .grade.gm-tcol-c {
+    padding-top: 85px;
+    font-size: 13px;
+    text-align: right;
+}
+/* 등급 */
+.skin-1080 #member-action-data .grade.gm-tcol-c {
+    font-weight: bold;
+    color: #333;
+}
+/* 등급안내표 제거 */
+.skin-1080 #member-action-data .grade.gm-tcol-c .txt {
+    display: none;
+}
+/* 프로필 설정 버튼 */
+.skin-1080 .cafe-info-action .lab_thmb {
+    right: -18px;
+    bottom: 74px;
+}
+/* 프로필 _ 나의 활동량 */
+.skin-1080 #member-action-data .ia-info-data3 {
+    padding: 0px 10px;
+    margin-top: 83px;
+    border-top: 1px solid #333;
+}
+/* 출석 및 data3 횟수 폰트 */
+.skin-1080 .ia-info-data3 em {
+    font-weight: bold;
+    color: #444;
+}
+
+/* ######################################################### */
+/* ################ 카페 사이드 게시판 목록 ################ */
+/* ######################################################### */
+/* 큰 카테고리 */
+.skin-1080 #cafe-menu .cafe-menu-tit .gm-tcol-t {
+    padding: 6px 10px;
+}
+/* 게시판 */
+.skin-1080 #cafe-menu .cafe-menu-list {
+    padding: 0px 10px;
+    margin-top: 2px;
+    line-height: 26px;
+}
+/* 게시판 */
+.skin-1080 #cafe-menu .cafe-menu-list li:last-child {
+    padding-bottom: 0px;
+}
+/* 게시판 NEW 아이콘 */
+.skin-1080 #cafe-menu .cafe-menu-list .ico_new {
+    content: url(https://cafe.pstatic.net/cafe4/ico-new.gif);
+    padding-top: 1px;
+    margin-left: -1px;
+}
+/* 메뉴 _ 이미지 게시판 아이콘 구버젼화 */
+.skin-1080 #cafe-menu .cafe-menu-list .ico-photo {
+    background: url(https://cafe.pstatic.net/design/menubox/menubox-566-1/ico-m-photo.gif);
+    margin: 6px 5px 0 0;
+}
+/* 신고 게시판 아이콘 */
+.skin-1080 #cafe-menu .cafe-menu-list .ico-memo {
+    background: url(https://ssl.pstatic.net/static/cafe/cafe_pc/sp/sp_icon_180817.png);
+    background-position:-259px -29px ;
+    border-radius:3px;
+    width: 12px;
+    height: 14px;
+    margin: 4.5px 5px 0 -1px;
+}
+
+/* ################################################## */
+/* ################ 카페 사이드 위젯 ################ */
+/* ################################################## */
+/* 위젯 배경 색상, 간격, 테두리 */
+.skin-1080 .com .box-w {
+    background-color: #fff;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+/* 접속 멤버 위젯 크기 */
+.skin-1080 #linked-member {
+    margin: -12px 0px -10px;
+}
+/* 위젯 제목, 정보 간격 */
+.skin-1080 #linked-member .group-tit {
+    padding-bottom: 2px;
+}
+/* 접속 멤버 위젯 버튼 위치 */
+.skin-1080 #linked-member .group-tit p {
+    top: 5px;
+}
+/* 접속 멤버 상자 */
+.skin-1080 #linked-member #lm-list {
+    background-color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px 0 0 5px;;
+    text-align: center;
+    padding: 0px 10px 15px;
+}
+/* 위젯 상자 간격 _ 2 */
+.skin-1080 .com .box-ww {
+    margin-bottom: 4px;
+}
+/* 투데이 위젯 */
+.skin-1080 #widget-count {
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 7px 12px 7px;
+}
+/* 게시글 랭킹 위젯 */
+.skin-1080 #rank-article {
+    margin: -9px 0 -14px;
+}
+/* 게시글 랭킹 좋아요, 댓글 */
+.skin-1080 #rank-article .group-mlist {
+    padding-bottom: 3px;
+}
+/* 게시글 랭킹 가운데 정렬 */
+.skin-1080 #rank-article .group-list {
+    margin-bottom: -5px;
+    text-align: center;
+}
+/* 게시글 랭킹 이전, 다음 */
+.skin-1080 #rank-article .pocket_nav {
+    text-align: center;
+}
+/* 멤버 랭킹 위젯 */
+.skin-1080 #rank-member {
+    margin: -9px 0 -14px;
+}
+/* 멤버 랭킹 댓글, 게시글, 방문 */
+.skin-1080 #rank-member .group-mlist {
+    padding-bottom: 3px;
+}
+/* 멤버 랭킹 가운데 정렬 */
+.skin-1080 #rank-member .group-list {
+    text-align: center;
+    margin-bottom: -5px;
+}
+/* 멤버 랭킹 이전, 다음 */
+.skin-1080 #rank-member .pocket_nav {
+    text-align: center;
+}
+/* 카페 인기 태그 위젯 */
+.skin-1080 #cafe-pop-tag {
+    margin: -9px 0 -14px;
+}
+/* 위젯 제목, 정보 간격 */
+.skin-1080 #cafe-pop-tag .group-tit {
+    padding-bottom: 0;
+}
+/* 카페 인기 태그 more 버튼 */
+.skin-1080 #cafe-pop-tag .group-tit p {
+    top: 0;
+}
+/* 카페 인기 태그 가운데 정렬 */
+.skin-1080 #cafe-pop-tag .group-list {
+    text-align: center;
+}
+/* 최근 댓글, 답글 위젯 */
+.skin-1080 #recent-reply {
+    margin: -9px 0 -12px;
+}
+/* 위젯 제목, 정보 간격 */
+.skin-1080 #recent-reply .group-tit {
+    padding-bottom: 0;
+}
+/* 최근 댓글, 답글 가운데 정렬 */
+.skin-1080 #recent-reply .group-list {
+    padding-bottom: 0;
+    text-align: center;
+}
+/* 최근 댓글 이전, 다음 */
+.skin-1080 #recent-reply .pocket_nav {
+    text-align: center;
+}
+/* 카페 탈퇴 위젯 */
+.skin-1080 #cafe-secede {
+    padding: 0;
+    margin: -9px 0;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+/* 날씨 위젯 제거 */
+.skin-1080 #widget-weather {
+    display: none;
+} 
+/* 카페 봇 제거 */
+.skin-1080 .banner_chatbot {
+    display: none;
+}
+
+/* ################################################ */
+/* ################ 카페 메인 공간 ################ */
+/* ################################################ */
+/* 게시판, 게시글 정렬 */
+#content-area {
+    margin: 0;
+}
+/* 게시판 제목 위 공간 제거 */
+.skin-1080 #sub-tit {
+    padding-top: 1px;
+}
+/* 게시판 상단 제목, 버튼 위치 */
+.skin-1080 .list-style {
+    padding: 35px 0 5px;
+}
+/* 게시판 제목 위치 */
+.skin-1080 #sub-tit .title_area .sub-tit-color {
+    padding-left: 35px;
+}
+/* 게시판 북마크 아이콘 */
+.skin-1080 #sub-tit .ico_bookmark {
+    border-color: #666;
+    margin-left: 0px;
+    padding-right: 0px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+/* 게시판 북마크 아이콘 클릭상태 */
+.skin-1080 #sub-tit .ico_bookmark.on {
+    border-color: #00cc27;
+}
+/* MY 구독 버튼 위치 */
+.skin-1080 #sub-tit .me_feed {
+    padding-left: 682px;
+}
+/* MY 구독 버튼 박스 */
+.btn_type2 {
+    border-radius: 5px;
+    border-color: #666;
+    line-height: 16px;
+}
+/* 전체글보기 밑 총게시글갯수 제거 */
+.skin-1080 .list-style .total {
+    display: none;
+}
+/* 게시판 서브 타이틀 제거 */
+.skin-1080 #sub-tit .title_area p.m-tcol-c {
+    display: none;
+}
+/* 공지 숨기기, 게시판 형식, 한페이지당 게시글 수 버튼 위치 */
+.skin-1080 .list-style .sort_area {
+    margin-right: -552px;
+}
+/* 한페이지당 게시글 수 버튼 */
+.skin-1080 .list-style .select_component2 {
+    border-radius: 5px;
+    border-color: #666;
+}
+/* 한페이지당 게시글 수 박스 */
+.select_component2 .select_box {
+    line-height: 15px;
+}
+/* 게시글 와이드 */
+.skin-1080 .article-board table {
+    width: 169%;
+}
+/* 제목, 작성자, ... 상자 크기 */
+.skin-1080 .article-board thead th {
+    padding: 0;
+    height: 35px;
+}
+/* 게시글 높이 */
+.skin-1080 .article-board tbody td {
+    height: 24px;
+}
+/* 공지 태그 아이콘 */
+.skin-1080 .article-board .board-icon-noti {
+    background-color: #f90;
+    border-radius: 4px;
+    font-size: 11px;
+    width: 34px;
+    height: 16px;
+    line-height: 12px;
+    margin-bottom: 1px;
+    color: #fff;
+    border: 1px solid #f90;
+}
+/* 추천 태그 아이콘 */
+.skin-1080 .article-board .board-icon-recom {
+    font-size: 11px;
+    border-radius: 3px;
+    width: 34px;
+    height: 16px;
+    line-height: 12px;
+}
+/* 공지 게시글 제목 색상 */
+.skin-1080 .article-board .board-list .article_noti {
+    color: #f90;
+}
+/* 댓글 색상 */
+.skin-1080 .article-board .board-list .cmt {
+    color: #f90;
+    font-weight: normal;
+    padding-left: 1px;
+}
+/* 게시글 NEW 구아이콘 */
+.skin-1080#main-area .list-i-new {
+    content: url(https://cafe.pstatic.net/cafe4/ico-new.gif);
+    width: 13px;
+    height: 13px;
+    margin-left: 2px;
+    background-image: none;
+}
+/* 게시글 이미지 구아이콘 */
+.skin-1080#main-area .list-i-img {
+    content: url(https://cafe.pstatic.net/cafe4/ico-img.gif);
+    width: 13px;
+    height: 13px;
+    background-image: none;
+}
+/* 게시글 영상 구아이콘 */
+.skin-1080#main-area .list-i-movie {
+    content: url(https://cafe.pstatic.net/cafe4/ico-movie.gif);
+    width: 13px;
+    height: 13px;
+    background-image: none;
+}
+/* 링크 아이콘 제거 */
+.skin-1080#main-area .list-i-link {
+    display: none;
+}
+/* 게시글 파일 구아이콘 */
+.skin-1080#main-area .list-i-upload {
+    content: url(https://cafe.pstatic.net/cafe4/ico_file2.gif);
+    width: 13px;
+    height: 13px;
+    background-image: none;
+}
+/* 게시글 투표 구아이콘 */
+.skin-1080#main-area .list-i-poll {
+    content: url(https://cafe.pstatic.net/cafe4/ico-poll.gif);
+    width: 13px;
+    height: 13px;
+    background-image: none;
+}
+/* 작성자 가운데 정렬 */
+.skin-1080 .article-board .td_name {
+    padding: 4px 45px 4px 0px;
+}
+/* 작성자 등급아이콘 위치 */
+.skin-1080 .article-board .pers_nick_area .mem-level {
+    margin: 2px 0 0 2px;
+}
+/* 작성자 등급아이콘 크기 */
+.skin-1080 .article-board .pers_nick_area img {
+    width: 14px;
+    height: 14px;
+}
+/* 게시글 말머리 */
+.skin-1080 .article-board .board-name {
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 18px;
+    padding-top: 0;
+}
+/* 게시판 아래 글쓰기 버튼 위치 */
+.skin-1080 .post_btns {
+    margin-right: -552px;
+}
+/* 글쓰기 버튼 테두리 */
+.btn_type1.post_write {
+    border-radius: 5px;
+    border-color: #666;
+}
+/* 게시판 페이지 버튼 */
+.skin-1080 .prev-next {
+    background-color: #fff;
+    width: 1352px;
+}
+/* 게시판 페이지 선택된 버튼 */
+.skin-1080 .prev-next a.on {
+    border-radius: 5px;
+    border-color: #666;
+    font-weight: bold;
+}
+/* 게시판 하단 검색바 */
+.skin-1080 .list-search {
+    background-color: #fff;
+    width: 1352px;
+}
+/* 검색바 검색분류 */
+.select_component {
+    border-radius: 10px;
+    border-color: #666;
+    width: 130px !important;
+}
+/* 검색분류 선택창 */
+.select_component.is_selected .select_list {
+    border-radius: 10px;
+    top: 40px;
+    border-color: #666;
+    text-align: center;
+}
+/* 검색분류 선택값 간격 */
+.select_component .select_list li a {
+    height: 30px;
+}
+/* 검색분류 기간 입력창 */
+.select_component .date_enter {
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+/* 입력박스 */
+.select_component .date_enter input {
+    border: 1px solid #666;
+    border-radius: 5px;
+    line-height: 14px;
+}
+/* 기간 입력 설정 버튼 */
+.select_component .date_enter .btn_set {
+    background-color: #00cc27;
+    border-radius: 5px;
+    border-color: #00cc27;
+    font-size: 12px;
+    line-height: 15px;
+}
+/* 입력상자 테두리 */
+.input_search_area .input_component {
+    border-color: #666;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+/* 입력상자 */
+.input_component input {
+    border-radius: 5px;
+}
+/* 검색버튼 */
+.input_search_area .btn-search-green {
+    border-radius: 5px;
+    line-height: 1px;
+}
+/* 광고 제거 */
+.skin-1080 .searchad {
+    display: none;
+}
+
+/* ######################################## */
+/* ################ 게시글 ################ */
+/* ######################################## */
+/* 상단 이전글, 다음글, 목록 버튼 박스 */
+.list-btn-nor2 .btn2 {
+    border-radius: 5px;
+    border-color: #666;
+    height: 30px;
+}
+/* 버튼 텍스트 가운데 정렬 */
+.list-btn-nor2 .btn2 .m-tcol-c {
+    padding-top: 7px;
+}
+/* 게시글 박스 공간 크기 */
+.list-blog {
+    width: 1350px;
+    border-color: #666;
+    border-radius: 10px;
+}
+/* 게시글 공간 */
+#main-area .m-tcol-c {
+    margin-right: 0 !important;
+    margin-left: 0;
+    width: auto !important;
+}
+/* 댓글 배경 */
+#content-area .box-reply2 {
+    background-color: #fff;
+}
+/* 댓글 작성자 */
+#content-area .box-reply2 .author.m-tcol-p {
+    margin-left: 5px;
+}
+/* 댓글 입력박스 */
+#content-area .cminput .comm_write_wrap {
+    border-color: #666;
+    border-radius: 5px;
+}
+/* 댓글 입력 */
+#content-area .cminput .comm_write_wrap .textarea {
+    width: 1160px !important;
+}
+/* 댓글 등록버튼 */
+#content-area .cminput .u_cbox_btn_upload {
+    border-color: #666;
+    border-radius: 5px;
+}
+/* 하단 글쓰기, 답글, 목록 버튼 */
+.list-btn-nor .btn {
+    border-radius: 5px;
+    border-color: #666;
+    height: 30px;
+}
+/* 버튼 텍스트 가운데 정렬 */
+.list-btn-nor .btn .m-tcol-c {
+    padding-top: 7px;
+}
+/* 하단 게시글에 달린 댓글 */
+.article-board .board-list .num {
+    color: #ff9000 !important;
+}
+/* 하단 게시글 NEW 구아이콘 */
+#main-area .article-board .list-i-new {
+    background: url(https://cafe.pstatic.net/cafe4/ico-new.gif) no-repeat;
+    width: 10px;
+    height: 9px;
+}
+/* 하단 게시글 이미지 구아이콘 */
+#main-area .article-board .list-i-img {
+    background: url(https://cafe.pstatic.net/cafe4/ico-img.gif) no-repeat;
+    width: 13px;
+    height: 12px;
+}
+/* 하단 게시글 영상 구아이콘 */
+#main-area .article-board .list-i-movie {
+    background: url(https://cafe.pstatic.net/cafe4/ico-movie.gif) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+/* 하단 게시글 파일 구아이콘 */
+#main-area .article-board .list-i-upload {
+    background: url(https://cafe.pstatic.net/cafe4/ico_file2.gif) no-repeat;
+    width: 12px;
+    height: 12px;
+}
+/* 하단 게시글 투표 구아이콘 */
+#main-area .article-board .list-i-poll {
+    background: url(https://cafe.pstatic.net/cafe4/ico-poll.gif) no-repeat;
+    width: 10px;
+    height: 10px;
+}
+/* 광고 제거 */
+.searchad {
+    display: none;
+}
+
+/* ########################################### */
+/* ################ 검색 결과 ################ */
+/* ########################################### */
+/* 상단 검색창 넓이 */
+.skin-1080 .search_result {
+    width: 1352px;
+}
+/* 상단 검색창 배경 */
+.skin-1080 .search_result .search_input {
+    background-color: #fff;
+}
+/* 상세검색 */
+.skin-1080 .search_result .input_component {
+    border-color: #333;
+    border-radius: 5px;
+}
+/* 상세검색 새로고침 버튼 */
+.btn_refresh {
+    border-radius: 5px;
+}
+
+/* ############################################# */
+/* ################ 프로필 정보 ################ */
+/* ############################################# */
+/* 프로필 정보 버그 수정 */
+.skin-1080 #sub-tit.sub_tit_profile .text {
+    height: 150px;
+}
+/* 게시글 보기, 카페북 페이지 보기 길이 */
+.skin-1080 .list_sub_tab {
+    width: 1352px;
+}
+/* 게시글 버그 수정 */
+#innerNetwork {
+    width: 1352px;
+}
+/* 등록한 게시글, 댓글 단 게시글, ... 길이 */
+.skin-1080 .article_profile .sort_area {
+    width: 1352px;
+}
+/* 삭제, 글쓰기 버튼 */
+.btn_type1 {
+    border-color: #666;
+    border-radius: 5px;
+    padding: 5px 12px;
+    height: 30px;
+}
+/* ############################################# */
+/* ################ 앨범 게시판 ################ */
+/* ############################################# */
+/* 앨범 게시판 공간 */
+.skin-1080#main-area .article-album-sub {
+    width: 1352px;
+}
+/* 게시글 조절 */
+.skin-1080 .article-album-sub li {
+    width: 258px;
+    height: 360px;
+}
+/* 이미지 상자 크기 조절 */
+.skin-1080 .article-album-sub .album-img {
+    width: 258px;
+    height: 258px;
+}
+/* 이미지 크기 조절 */
+.skin-1080 .article-album-sub .album-img img {
+    width: 258px;
+    height: 258px;
+}
+/* 텍스트 가운데 정렬 */
+.skin-1080 .article-album-sub dl {
+    text-align: center;
+}
+/* 앨범 NEW 구아이콘 */
+.skin-1080 .article-album-sub img[alt="new"] {
+    content: url(https://cafe.pstatic.net/cafe4/ico-new.gif);
+    margin: 3px 0 0 2px;
+}
+/* 글쓰기 버튼 */
+.btn_type1.post_write {
+    padding: 5px 0;
+}
+
+/* ############################################# */
+/* ################ 신고 게시판 ################ */
+/* ############################################# */
+/* 메모 박스 크기 */
+.skin-1080 .article-memo {
+    width: 1352px;
+}
+/* 메모 박스 테두리 */
+.skin-1080 .box_write {
+    border-color: #666;
+    border-radius: 10px;
+}
+/* 메모 박스 테두리 상단 */
+.skin-1080 .box_write .tf_write {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* 메모 박스 테두리 하단 */
+.skin-1080 .box_write .set_attach {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* 메모 버튼 배경 */
+.skin-1080 .box_write .set_attach .btn_submit {
+    background-color: #00cc27;
+    border-bottom-right-radius: 10px;
+}
+/* 메모 */
+.skin-1080 .article-memo .memo_lst_section {
+    width: 1318px;
+    border-color: #666;
+    border-radius: 5px;
+}
+
+/* ######################################## */
+/* ################ 글쓰기 ################ */
+/* ######################################## */
+#cafe_main {
+    width: 1352px !important;
+}
+#frmWrite #nboard {
+    width: 1352px !important;
+}
+#naver_common_editor {
+    width: 1332px;
+}
+#naver_common_editor table.wrap {
+    width: 1332px;
+}
+
+/* ########################################### */
+/* ################ 카페 하단 ################ */
+/* ########################################### */
+/* 카페 하단 설정 */
+.footer {
+    width: 1400px;
+    margin: 0 0 0 20px;
+    padding: 25px 0 20px 220px;;
+    text-align: center;
+}
+/* 카페 하단 이름, 주소 간격 */
+.footer .cafe_name {
+    margin-right: 500px;
+}
+/* 카페 하단 '카페' 아이콘 제거 */
+.footer .naver_cafe {
+    display: none;
+}
+/* 카페 하단 구분선 제거 */
+.footer .cafe_link:before {
+    display: none;
+}
